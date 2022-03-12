@@ -3,7 +3,8 @@ import os
 from google.cloud import language
 
 # load api_key into memory from local
-with open('../radiology-unstructured-text-4280fe5918b0.json') as f: apikey = json.load(f)
+#with open('../radiology-unstructured-text-4280fe5918b0.json') as f: apikey = json.load(f)
+with open('../../api_radiology_unstructured_text.txt') as f: API_KEY = f.read()
 
 #os.environ['GOOGLE-APPLICATION_CREDENTIALS'] = 'C:\Google Drive\Data Science\Python Projects/radiology-unstructured-text-4280fe5918b0.json'
 GOOGLE_APPLICATION_CREDENTIALS = apikey
